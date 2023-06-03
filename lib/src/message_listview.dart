@@ -244,7 +244,7 @@ class _MessageListViewState extends State<MessageListView> {
                                                                   text: widget
                                                                       .messages[
                                                                           i]
-                                                                      .text));
+                                                                      .text??''));
                                                           Navigator.pop(
                                                               context);
                                                         },

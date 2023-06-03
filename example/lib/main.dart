@@ -121,7 +121,7 @@ class _MyHomePageState extends State<MyHomePage> {
             } else {
               List<DocumentSnapshot> items = snapshot.data!.docs;
               var messages =
-                  items.map((i) => ChatMessage.fromJson(i.data()!)).toList();
+                  items.map((i) => ChatMessage.fromJson(i.data()! as Map)).toList();
               return DashChat(
                 key: _chatViewKey,
                 inverted: false,
